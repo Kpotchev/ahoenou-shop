@@ -189,3 +189,67 @@
   font-weight: 700 !important;
   letter-spacing: 1px !important;
 }
+
+/* ===== TEXTES HERO LISIBLES ===== */
+.ch-content h1,
+.ch-content .ch-slogan,
+.ch-content .ch-desc,
+.ch-content .ch-badge,
+.ch-stat .ch-n,
+.ch-stat .ch-l {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.9) !important;
+  opacity: 1 !important;
+  color: #ffffff !important;
+}
+
+.ch-content h1 span { 
+  color: #f59e2a !important; 
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8) !important;
+}
+
+.ch-content .ch-slogan {
+  color: #fde68a !important;
+}
+
+.ch-stat .ch-n {
+  color: #f59e2a !important;
+  font-size: 36px !important;
+}
+
+.ch-stat .ch-l {
+  color: #f5edd8 !important;
+}
+
+/* ===== ABRÉVIATIONS TG BJ CI ===== */
+.ch-badge {
+  background: rgba(0,0,0,0.5) !important;
+  border: 2px solid rgba(255,255,255,0.6) !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8) !important;
+  padding: 8px 18px !important;
+}
+
+/* ===== DRAPEAU GRAND ET VISIBLE ===== */
+.ch-country-flag {
+  font-size: 90px !important;
+  position: absolute !important;
+  top: 16px !important;
+  right: 36px !important;
+  z-index: 10 !important;
+  filter: drop-shadow(0 6px 20px rgba(0,0,0,0.6)) !important;
+  line-height: 1 !important;
+  animation: float 4s ease-in-out infinite !important;
+}
+
+/* ===== BOUTONS HERO VISIBLES ===== */
+.ch-actions .btn-primary {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4) !important;
+}
+.ch-actions .btn-ghost {
+  border-color: rgba(255,255,255,0.8) !important;
+  color: #ffffff !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6) !important;
+}
