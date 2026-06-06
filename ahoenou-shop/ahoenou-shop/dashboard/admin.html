@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Admin — Ahoenou-Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/dashboard.css"/>
+</head>
+<body class="dash-body">
+
+<aside class="sidebar">
+    <div class="sidebar-logo">
+    <img src="../images/logo-transparent.png" alt="Ahoenou-Shop" style="height:48px;width:auto;"/>
+  </div>
+  </div>
+  <nav class="sidebar-nav">
+    <span class="sb-section">Principal</span>
+    <a href="#" class="sb-link active">&#9632; Tableau de bord</a>
+    <a href="#" class="sb-link">&#9632; Commandes</a>
+    <a href="#" class="sb-link">&#9632; Produits</a>
+    <a href="#" class="sb-link">&#9632; Vendeurs</a>
+    <a href="#" class="sb-link">&#9632; Acheteurs</a>
+    <span class="sb-section">Pays</span>
+    <a href="#" class="sb-link">&#127479;&#127468; Togo</a>
+    <a href="#" class="sb-link">&#127463;&#127471; Bénin</a>
+    <a href="#" class="sb-link">&#127464;&#127470; Côte d'Ivoire</a>
+    <span class="sb-section">Paramètres</span>
+    <a href="#" class="sb-link">&#9632; Paramètres</a>
+    <a href="../index.html" class="sb-link">&#9632; Voir le site</a>
+  </nav>
+  <div class="sidebar-user">
+    <div class="user-avatar">AD</div>
+    <div>
+      <span class="user-name">Administrateur</span>
+      <span class="user-email">admin@ahoenou-shop.com</span>
+    </div>
+  </div>
+</aside>
+
+<main class="dash-main">
+  <header class="dash-header">
+    <div>
+      <h1 class="dash-title">Tableau de bord</h1>
+      <p class="dash-sub">Bienvenue ! Voici un aperçu global de la plateforme.</p>
+    </div>
+    <div class="dash-header-actions">
+      <span class="dash-date">Vendredi 6 juin 2025</span>
+      <button class="btn-dash-primary">+ Ajouter un produit</button>
+    </div>
+  </header>
+
+  <!-- KPI CARDS -->
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-icon green">&#128722;</div>
+      <div class="kpi-body">
+        <span class="kpi-label">Commandes totales</span>
+        <span class="kpi-value">1 248</span>
+        <span class="kpi-trend up">+12% ce mois</span>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon orange">&#128176;</div>
+      <div class="kpi-body">
+        <span class="kpi-label">Revenus totaux</span>
+        <span class="kpi-value">8 450 000 FCFA</span>
+        <span class="kpi-trend up">+18% ce mois</span>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon green">&#128101;</div>
+      <div class="kpi-body">
+        <span class="kpi-label">Vendeurs actifs</span>
+        <span class="kpi-value">134</span>
+        <span class="kpi-trend up">+8 ce mois</span>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon orange">&#128100;</div>
+      <div class="kpi-body">
+        <span class="kpi-label">Acheteurs inscrits</span>
+        <span class="kpi-value">3 892</span>
+        <span class="kpi-trend up">+245 ce mois</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dash-row">
+    <!-- REVENUS PAR PAYS -->
+    <div class="dash-card wide">
+      <div class="dc-head">
+        <h3>Revenus par pays</h3>
+        <select class="dc-filter"><option>Ce mois</option><option>3 mois</option><option>Cette année</option></select>
+      </div>
+      <div class="country-revenues">
+        <div class="cr-item">
+          <div class="cr-flag">🇹🇬</div>
+          <div class="cr-info">
+            <span class="cr-name">Togo</span>
+            <div class="cr-bar-wrap"><div class="cr-bar" style="width:72%; background:#1e5c38"></div></div>
+          </div>
+          <span class="cr-amount">3 850 000 FCFA</span>
+        </div>
+        <div class="cr-item">
+          <div class="cr-flag">🇧🇯</div>
+          <div class="cr-info">
+            <span class="cr-name">Bénin</span>
+            <div class="cr-bar-wrap"><div class="cr-bar" style="width:55%; background:#e07b00"></div></div>
+          </div>
+          <span class="cr-amount">2 920 000 FCFA</span>
+        </div>
+        <div class="cr-item">
+          <div class="cr-flag">🇨🇮</div>
+          <div class="cr-info">
+            <span class="cr-name">Côte d'Ivoire</span>
+            <div class="cr-bar-wrap"><div class="cr-bar" style="width:33%; background:#d4a017"></div></div>
+          </div>
+          <span class="cr-amount">1 680 000 FCFA</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMMANDES RÉCENTES -->
+    <div class="dash-card">
+      <div class="dc-head"><h3>Commandes récentes</h3><a href="#" class="dc-link">Voir tout</a></div>
+      <div class="orders-list">
+        <div class="order-item">
+          <div class="order-id">#2048</div>
+          <div class="order-info"><span class="order-prod">Huile de palme x3</span><span class="order-buyer">Kofi A. — 🇹🇬</span></div>
+          <span class="order-status delivered">Livré</span>
+          <span class="order-amount">7 500 FCFA</span>
+        </div>
+        <div class="order-item">
+          <div class="order-id">#2047</div>
+          <div class="order-info"><span class="order-prod">Chaise en teck</span><span class="order-buyer">Ama K. — 🇧🇯</span></div>
+          <span class="order-status pending">En cours</span>
+          <span class="order-amount">45 000 FCFA</span>
+        </div>
+        <div class="order-item">
+          <div class="order-id">#2046</div>
+          <div class="order-info"><span class="order-prod">Pagne Kpeme x2</span><span class="order-buyer">Yao M. — 🇨🇮</span></div>
+          <span class="order-status delivered">Livré</span>
+          <span class="order-amount">16 000 FCFA</span>
+        </div>
+        <div class="order-item">
+          <div class="order-id">#2045</div>
+          <div class="order-info"><span class="order-prod">Daba forgée x5</span><span class="order-buyer">Koffi D. — 🇹🇬</span></div>
+          <span class="order-status shipping">Expédié</span>
+          <span class="order-amount">17 500 FCFA</span>
+        </div>
+        <div class="order-item">
+          <div class="order-id">#2044</div>
+          <div class="order-info"><span class="order-prod">Épices locales x10</span><span class="order-buyer">Fatou B. — 🇧🇯</span></div>
+          <span class="order-status cancelled">Annulé</span>
+          <span class="order-amount">12 000 FCFA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dash-row">
+    <!-- TOP PRODUITS -->
+    <div class="dash-card">
+      <div class="dc-head"><h3>Top produits</h3><a href="#" class="dc-link">Voir tout</a></div>
+      <div class="top-prods">
+        <div class="tp-item"><span class="tp-rank">1</span><div class="tp-info"><span class="tp-name">Huile de palme rouge</span><span class="tp-cat">Produits transformés · Togo</span></div><span class="tp-sales">340 ventes</span></div>
+        <div class="tp-item"><span class="tp-rank">2</span><div class="tp-info"><span class="tp-name">Pagne Kpeme</span><span class="tp-cat">Artisanat · Togo</span></div><span class="tp-sales">218 ventes</span></div>
+        <div class="tp-item"><span class="tp-rank">3</span><div class="tp-info"><span class="tp-name">Beurre de karité pur</span><span class="tp-cat">Produits transformés · Bénin</span></div><span class="tp-sales">197 ventes</span></div>
+        <div class="tp-item"><span class="tp-rank">4</span><div class="tp-info"><span class="tp-name">Café ivoirien arabica</span><span class="tp-cat">Produits transformés · CI</span></div><span class="tp-sales">163 ventes</span></div>
+        <div class="tp-item"><span class="tp-rank">5</span><div class="tp-info"><span class="tp-name">Chaise en bois de teck</span><span class="tp-cat">Meubles · Togo</span></div><span class="tp-sales">98 ventes</span></div>
+      </div>
+    </div>
+
+    <!-- VENDEURS RÉCENTS -->
+    <div class="dash-card">
+      <div class="dc-head"><h3>Nouveaux vendeurs</h3><a href="#" class="dc-link">Voir tout</a></div>
+      <div class="vendors-list">
+        <div class="vendor-item">
+          <div class="vendor-avatar" style="background:#1e5c38">KA</div>
+          <div class="vendor-info"><span class="vendor-name">Kokou Agbéko</span><span class="vendor-meta">🇹🇬 Togo · Artisanat</span></div>
+          <span class="vendor-status active">Actif</span>
+        </div>
+        <div class="vendor-item">
+          <div class="vendor-avatar" style="background:#e07b00">MB</div>
+          <div class="vendor-info"><span class="vendor-name">Mariama Bello</span><span class="vendor-meta">🇧🇯 Bénin · Agriculture</span></div>
+          <span class="vendor-status active">Actif</span>
+        </div>
+        <div class="vendor-item">
+          <div class="vendor-avatar" style="background:#d4a017">YK</div>
+          <div class="vendor-info"><span class="vendor-name">Yao Kouadio</span><span class="vendor-meta">🇨🇮 CI · Meubles</span></div>
+          <span class="vendor-status pending">En attente</span>
+        </div>
+        <div class="vendor-item">
+          <div class="vendor-avatar" style="background:#52b788">AD</div>
+          <div class="vendor-info"><span class="vendor-name">Adjoa Dossou</span><span class="vendor-meta">🇧🇯 Bénin · Cosmétiques</span></div>
+          <span class="vendor-status active">Actif</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>
