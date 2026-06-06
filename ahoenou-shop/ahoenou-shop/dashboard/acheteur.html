@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mon Compte — Ahoenou-Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/dashboard.css"/>
+</head>
+<body class="dash-body">
+
+<aside class="sidebar">
+    <div class="sidebar-logo">
+    <img src="../images/logo-transparent.png" alt="Ahoenou-Shop" style="height:48px;width:auto;"/>
+  </div>
+  </div>
+  <nav class="sidebar-nav">
+    <span class="sb-section">Mon espace</span>
+    <a href="#" class="sb-link active">&#9632; Tableau de bord</a>
+    <a href="#" class="sb-link">&#9632; Mes commandes</a>
+    <a href="#" class="sb-link">&#9632; Ma liste de souhaits</a>
+    <a href="#" class="sb-link">&#9632; Mes avis</a>
+    <span class="sb-section">Compte</span>
+    <a href="#" class="sb-link">&#9632; Mon profil</a>
+    <a href="#" class="sb-link">&#9632; Adresses de livraison</a>
+    <a href="#" class="sb-link">&#9632; Paiement</a>
+    <a href="../pages/togo.html" class="sb-link">&#9632; Continuer mes achats</a>
+  </nav>
+  <div class="sidebar-user">
+    <div class="user-avatar" style="background:#1e5c38">KD</div>
+    <div>
+      <span class="user-name">Kwame Dossou</span>
+      <span class="user-email">🇹🇬 Client Lomé</span>
+    </div>
+  </div>
+</aside>
+
+<main class="dash-main">
+  <header class="dash-header">
+    <div>
+      <h1 class="dash-title">Bonjour, Kwame !</h1>
+      <p class="dash-sub">Suivez vos commandes et retrouvez vos achats.</p>
+    </div>
+    <div class="dash-header-actions">
+      <a href="../pages/togo.html" class="btn-dash-primary">Continuer mes achats</a>
+    </div>
+  </header>
+
+  <!-- KPIs -->
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-icon green">&#128722;</div>
+      <div class="kpi-body">
+        <span class="kpi-label">Commandes passées</span>
+        <span class="kpi-value">14</span>
+        <span class="kpi-trend neutral">Depuis votre inscription</span>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon orange">&#128230;</div>
+      <div class="kpi-body">
+        <span class="kpi-label">En cours de livraison</span>
+        <span class="kpi-value">2</span>
+        <span class="kpi-trend neutral">Livraison estimée : 2 jours</span>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon green">&#10084;</div>
+      <div class="kpi-body">
+        <span class="kpi-label">Liste de souhaits</span>
+        <span class="kpi-value">7 articles</span>
+        <span class="kpi-trend neutral">3 en promotion</span>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon orange">&#11088;</div>
+      <div class="kpi-body">
+        <span class="kpi-label">Avis laissés</span>
+        <span class="kpi-value">8 avis</span>
+        <span class="kpi-trend up">Merci pour vos retours !</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dash-row">
+    <!-- COMMANDES EN COURS -->
+    <div class="dash-card wide">
+      <div class="dc-head"><h3>Mes commandes</h3><a href="#" class="dc-link">Voir tout</a></div>
+      <div class="orders-list">
+
+        <div class="order-item-buyer">
+          <div class="oib-left">
+            <div class="oib-icon" style="background:#d4a017">🫒</div>
+            <div class="order-info">
+              <span class="order-prod">Huile de palme rouge x2</span>
+              <span class="order-buyer">Vendu par Kokou Agbéko · 🇹🇬 Togo</span>
+              <span class="order-buyer">Commandé le 3 juin 2025</span>
+            </div>
+          </div>
+          <div class="oib-right">
+            <span class="order-status shipping">En livraison</span>
+            <span class="order-amount">5 000 FCFA</span>
+            <button class="act-btn edit">Suivre</button>
+          </div>
+        </div>
+
+        <div class="order-item-buyer">
+          <div class="oib-left">
+            <div class="oib-icon" style="background:#52b788">🌿</div>
+            <div class="order-info">
+              <span class="order-prod">Pagne Kpeme traditionnel x1</span>
+              <span class="order-buyer">Vendu par Kokou Agbéko · 🇹🇬 Togo</span>
+              <span class="order-buyer">Commandé le 1er juin 2025</span>
+            </div>
+          </div>
+          <div class="oib-right">
+            <span class="order-status shipping">En livraison</span>
+            <span class="order-amount">8 000 FCFA</span>
+            <button class="act-btn edit">Suivre</button>
+          </div>
+        </div>
+
+        <div class="order-item-buyer">
+          <div class="oib-left">
+            <div class="oib-icon" style="background:#8B4513">🪑</div>
+            <div class="order-info">
+              <span class="order-prod">Chaise en bois de teck x1</span>
+              <span class="order-buyer">Vendu par Yao Kouadio · 🇨🇮 CI</span>
+              <span class="order-buyer">Commandé le 20 mai 2025</span>
+            </div>
+          </div>
+          <div class="oib-right">
+            <span class="order-status delivered">Livré</span>
+            <span class="order-amount">45 000 FCFA</span>
+            <button class="act-btn edit">Laisser un avis</button>
+          </div>
+        </div>
+
+        <div class="order-item-buyer">
+          <div class="oib-left">
+            <div class="oib-icon" style="background:#c96a00">🌶️</div>
+            <div class="order-info">
+              <span class="order-prod">Épices locales x3</span>
+              <span class="order-buyer">Vendu par Mariama Bello · 🇧🇯 Bénin</span>
+              <span class="order-buyer">Commandé le 15 mai 2025</span>
+            </div>
+          </div>
+          <div class="oib-right">
+            <span class="order-status delivered">Livré</span>
+            <span class="order-amount">3 600 FCFA</span>
+            <button class="act-btn edit">Racheter</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="dash-row">
+    <!-- LISTE DE SOUHAITS -->
+    <div class="dash-card">
+      <div class="dc-head"><h3>Ma liste de souhaits</h3><a href="#" class="dc-link">Voir tout</a></div>
+      <div class="wishlist">
+        <div class="wish-item"><div class="wish-icon" style="background:#1e5c38">⚒️</div><div class="wish-info"><span class="wish-name">Daba forgée localement</span><span class="wish-price">3 500 FCFA</span></div><button class="prod-btn-sm">Ajouter au panier</button></div>
+        <div class="wish-item"><div class="wish-icon" style="background:#a0522d">🏺</div><div class="wish-info"><span class="wish-name">Poterie d'Agou</span><span class="wish-price">6 000 FCFA</span></div><button class="prod-btn-sm">Ajouter au panier</button></div>
+        <div class="wish-item"><div class="wish-icon" style="background:#d4a017">☕</div><div class="wish-info"><span class="wish-name">Café ivoirien arabica</span><span class="wish-price">4 500 FCFA</span></div><button class="prod-btn-sm">Ajouter au panier</button></div>
+        <div class="wish-item promo"><div class="wish-icon" style="background:#52b788">🌿</div><div class="wish-info"><span class="wish-name">Beurre de karité pur <span class="promo-badge">-15%</span></span><span class="wish-price">3 400 FCFA</span></div><button class="prod-btn-sm">Ajouter au panier</button></div>
+      </div>
+    </div>
+
+    <!-- ADRESSE & INFOS -->
+    <div class="dash-card">
+      <div class="dc-head"><h3>Mon profil</h3><a href="#" class="dc-link">Modifier</a></div>
+      <div class="profile-info">
+        <div class="profile-avatar">KD</div>
+        <div class="profile-name">Kwame Dossou</div>
+        <div class="profile-meta">kwame.dossou@email.com</div>
+        <div class="profile-meta">+228 90 12 34 56</div>
+        <div class="rev-divider"></div>
+        <div class="rev-row"><span class="rev-label">Adresse principale</span></div>
+        <div class="profile-meta" style="margin-top:4px">123 Rue de l'Amitié, Lomé, Togo</div>
+        <div class="rev-divider"></div>
+        <div class="rev-row"><span class="rev-label">Mode de paiement</span></div>
+        <div class="profile-meta" style="margin-top:4px">Flooz · T-Money · Espèces à la livraison</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>

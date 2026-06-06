@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Espace Vendeur — Ahoenou-Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/dashboard.css"/>
+</head>
+<body class="dash-body">
+
+<aside class="sidebar">
+    <div class="sidebar-logo">
+    <img src="../images/logo-transparent.png" alt="Ahoenou-Shop" style="height:48px;width:auto;"/>
+  </div>
+  </div>
+  <nav class="sidebar-nav">
+    <span class="sb-section">Mon espace</span>
+    <a href="#" class="sb-link active">&#9632; Tableau de bord</a>
+    <a href="#" class="sb-link">&#9632; Mes produits</a>
+    <a href="#" class="sb-link">&#9632; Mes commandes</a>
+    <a href="#" class="sb-link">&#9632; Mes revenus</a>
+    <a href="#" class="sb-link">&#9632; Avis clients</a>
+    <span class="sb-section">Compte</span>
+    <a href="#" class="sb-link">&#9632; Mon profil</a>
+    <a href="#" class="sb-link">&#9632; Paramètres</a>
+    <a href="../index.html" class="sb-link">&#9632; Voir le site</a>
+  </nav>
+  <div class="sidebar-user">
+    <div class="user-avatar" style="background:#e07b00">KA</div>
+    <div>
+      <span class="user-name">Kokou Agbéko</span>
+      <span class="user-email">🇹🇬 Vendeur Togo</span>
+    </div>
+  </div>
+</aside>
+
+<main class="dash-main">
+  <header class="dash-header">
+    <div>
+      <h1 class="dash-title">Mon espace vendeur</h1>
+      <p class="dash-sub">Gérez vos produits, commandes et revenus.</p>
+    </div>
+    <div class="dash-header-actions">
+      <button class="btn-dash-primary">+ Ajouter un produit</button>
+    </div>
+  </header>
+
+  <!-- KPIs -->
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-icon green">&#128230;</div>
+      <div class="kpi-body">
+        <span class="kpi-label">Commandes reçues</span>
+        <span class="kpi-value">87</span>
+        <span class="kpi-trend up">+5 cette semaine</span>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon orange">&#128176;</div>
+      <div class="kpi-body">
+        <span class="kpi-label">Revenus du mois</span>
+        <span class="kpi-value">485 000 FCFA</span>
+        <span class="kpi-trend up">+22% vs mois dernier</span>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon green">&#128230;</div>
+      <div class="kpi-body">
+        <span class="kpi-label">Produits en ligne</span>
+        <span class="kpi-value">12</span>
+        <span class="kpi-trend neutral">2 en attente de validation</span>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon orange">&#11088;</div>
+      <div class="kpi-body">
+        <span class="kpi-label">Note moyenne</span>
+        <span class="kpi-value">4.7 / 5</span>
+        <span class="kpi-trend up">Basé sur 63 avis</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dash-row">
+    <!-- MES PRODUITS -->
+    <div class="dash-card wide">
+      <div class="dc-head">
+        <h3>Mes produits</h3>
+        <div style="display:flex;gap:8px">
+          <select class="dc-filter"><option>Tous</option><option>Actifs</option><option>En attente</option></select>
+          <button class="btn-dash-primary" style="font-size:12px;padding:6px 14px">+ Ajouter</button>
+        </div>
+      </div>
+      <table class="dash-table">
+        <thead>
+          <tr><th>Produit</th><th>Catégorie</th><th>Prix</th><th>Stock</th><th>Ventes</th><th>Statut</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="prod-name-cell">Huile de palme rouge</span></td>
+            <td><span class="cat-pill">Produits transformés</span></td>
+            <td>2 500 FCFA/L</td>
+            <td>48 litres</td>
+            <td>340</td>
+            <td><span class="order-status delivered">Actif</span></td>
+            <td class="td-actions"><button class="act-btn edit">Éditer</button><button class="act-btn del">Retirer</button></td>
+          </tr>
+          <tr>
+            <td><span class="prod-name-cell">Pagne Kpeme traditionnel</span></td>
+            <td><span class="cat-pill">Artisanat</span></td>
+            <td>8 000 FCFA</td>
+            <td>24 unités</td>
+            <td>218</td>
+            <td><span class="order-status delivered">Actif</span></td>
+            <td class="td-actions"><button class="act-btn edit">Éditer</button><button class="act-btn del">Retirer</button></td>
+          </tr>
+          <tr>
+            <td><span class="prod-name-cell">Daba forgée localement</span></td>
+            <td><span class="cat-pill">Outils agricoles</span></td>
+            <td>3 500 FCFA</td>
+            <td>30 unités</td>
+            <td>98</td>
+            <td><span class="order-status delivered">Actif</span></td>
+            <td class="td-actions"><button class="act-btn edit">Éditer</button><button class="act-btn del">Retirer</button></td>
+          </tr>
+          <tr>
+            <td><span class="prod-name-cell">Poterie d'Agou (grand)</span></td>
+            <td><span class="cat-pill">Artisanat</span></td>
+            <td>6 000 FCFA</td>
+            <td>10 unités</td>
+            <td>45</td>
+            <td><span class="order-status pending">En attente</span></td>
+            <td class="td-actions"><button class="act-btn edit">Éditer</button><button class="act-btn del">Retirer</button></td>
+          </tr>
+          <tr>
+            <td><span class="prod-name-cell">Mélange d'épices locales</span></td>
+            <td><span class="cat-pill">Épices</span></td>
+            <td>1 200 FCFA</td>
+            <td>60 paquets</td>
+            <td>187</td>
+            <td><span class="order-status delivered">Actif</span></td>
+            <td class="td-actions"><button class="act-btn edit">Éditer</button><button class="act-btn del">Retirer</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="dash-row">
+    <!-- COMMANDES À TRAITER -->
+    <div class="dash-card">
+      <div class="dc-head"><h3>Commandes à traiter</h3><a href="#" class="dc-link">Voir tout</a></div>
+      <div class="orders-list">
+        <div class="order-item">
+          <div class="order-id">#2048</div>
+          <div class="order-info"><span class="order-prod">Huile de palme x3</span><span class="order-buyer">Kofi Ama · Lomé</span></div>
+          <span class="order-status pending">À préparer</span>
+          <span class="order-amount">7 500 FCFA</span>
+        </div>
+        <div class="order-item">
+          <div class="order-id">#2051</div>
+          <div class="order-info"><span class="order-prod">Pagne Kpeme x1</span><span class="order-buyer">Akua D. · Cotonou</span></div>
+          <span class="order-status pending">À préparer</span>
+          <span class="order-amount">8 000 FCFA</span>
+        </div>
+        <div class="order-item">
+          <div class="order-id">#2039</div>
+          <div class="order-info"><span class="order-prod">Épices locales x5</span><span class="order-buyer">Koffi B. · Lomé</span></div>
+          <span class="order-status shipping">Expédié</span>
+          <span class="order-amount">6 000 FCFA</span>
+        </div>
+        <div class="order-item">
+          <div class="order-id">#2031</div>
+          <div class="order-info"><span class="order-prod">Daba forgée x2</span><span class="order-buyer">Yao M. · Abidjan</span></div>
+          <span class="order-status delivered">Livré</span>
+          <span class="order-amount">7 000 FCFA</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVENUS & PAIEMENTS -->
+    <div class="dash-card">
+      <div class="dc-head"><h3>Revenus & Paiements</h3></div>
+      <div class="revenue-summary">
+        <div class="rev-row">
+          <span class="rev-label">Revenus ce mois</span>
+          <span class="rev-val green-text">485 000 FCFA</span>
+        </div>
+        <div class="rev-row">
+          <span class="rev-label">Commission plateforme (8%)</span>
+          <span class="rev-val orange-text">- 38 800 FCFA</span>
+        </div>
+        <div class="rev-row total">
+          <span class="rev-label">Net à percevoir</span>
+          <span class="rev-val green-text bold">446 200 FCFA</span>
+        </div>
+        <div class="rev-divider"></div>
+        <div class="rev-row">
+          <span class="rev-label">Prochain paiement</span>
+          <span class="rev-val">15 juin 2025</span>
+        </div>
+        <div class="rev-row">
+          <span class="rev-label">Méthode</span>
+          <span class="rev-val">Flooz / T-Money</span>
+        </div>
+      </div>
+      <button class="btn-dash-outline full-w">Voir l'historique complet</button>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>
