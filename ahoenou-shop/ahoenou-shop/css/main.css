@@ -395,8 +395,8 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===== LOGO IMAGE ===== */
-.nav-logo-img {
-  height: 52px;
+.nav-logo-img-OLD {
+  height: 80px;
   width: auto;
   display: block;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
@@ -418,5 +418,26 @@ img { max-width: 100%; display: block; }
 }
 @media (max-width: 900px) {
   .hero-logo-img { width: 240px; }
-  .nav-logo-img { height: 42px; }
+  .nav-logo-img-OLD { height: 42px; }
+}
+
+/* ===== LOGO NAVBAR AMÉLIORÉ ===== */
+.nav-logo-img {
+  height: 80px;
+  width: auto;
+  display: block;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  filter: brightness(1.05) contrast(1.05);
+}
+
+/* ===== LOGO NAVBAR FINAL ===== */
+.nav-logo-img {
+  height: 75px;
+  width: auto;
+  display: block;
+  border-radius: 10px;
+  mix-blend-mode: multiply;
 }
