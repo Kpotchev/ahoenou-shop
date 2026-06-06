@@ -441,3 +441,32 @@ img { max-width: 100%; display: block; }
   border-radius: 10px;
   mix-blend-mode: multiply;
 }
+
+/* ===== LOGO FOOTER ===== */
+.footer .nav-logo-img {
+  height: 80px;
+  width: auto;
+  mix-blend-mode: screen;
+  filter: brightness(1.2);
+}
+
+/* ===== HERO IMAGES ===== */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.18;
+  z-index: 0;
+  border-radius: 0;
+}
+.hero > * { position: relative; z-index: 1; }
+
+/* ===== LOGO FOOTER FINAL ===== */
+.footer .nav-logo-img {
+  height: 80px;
+  width: auto;
+  mix-blend-mode: screen;
+  filter: brightness(1.3);
+}

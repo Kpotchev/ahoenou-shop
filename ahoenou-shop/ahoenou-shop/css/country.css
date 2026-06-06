@@ -137,3 +137,30 @@
   .products-grid { grid-template-columns: 1fr; }
   .ch-stats { gap: 16px; }
 }
+
+/* ===== HERO IMAGE PAYS ===== */
+.country-hero {
+  position: relative;
+  overflow: hidden;
+}
+.country-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.22;
+  z-index: 0;
+}
+.ch-flag-bar, .ch-inner { position: relative; z-index: 1; }
+
+/* ===== DRAPEAU DANS LE HERO ===== */
+.ch-country-flag {
+  font-size: 72px;
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  z-index: 2;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+  animation: float 4s ease-in-out infinite;
+}
